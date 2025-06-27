@@ -1,0 +1,17 @@
+- task: SnykSecurityScan@1
+  inputs:
+    testType: 'code'
+    codeSeverityThreshold: 'medium'
+    failOnIssues: true
+    projectName: 'Test1'
+    organization: 'Test12'
+    failOnThreshold: 'medium'
+- task: SnykSecurityScan@1
+  inputs:
+      testType: 'code'
+      codeSeverityThreshold: 'medium'
+      failOnIssues: true
+      projectName: 'VeryGood'
+      organization: 'VeryGoodOrg'
+      testDirectory: '/veryGood/testing/path'
+      failOnThreshold: 'high'
